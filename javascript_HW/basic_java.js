@@ -53,9 +53,9 @@ function checkPrime(n) {
   }
 
   if (flag==true){
-    document.write(n + " là số nguyên tố")
+    document.write(`${n} là số nguyên tố`)
   } else {
-    document.write(n + " không là số nguyên tố")
+    document.write(`${n} không phải là số nguyên tố`)
   }
 }
 
@@ -71,7 +71,7 @@ function total(n) {
   for (let i = 1; i<=n;i++){
     sum +=i;
   }
-  document.write("Tổng từ 1 đến "+n+" là: "+sum)
+  document.write(`Tổng từ 1 đến ${n} là ${sum}`)
 
 }
 
@@ -84,7 +84,7 @@ function totalOfSquare(n) {
   for (let i = 1; i<=n; i++) {
     sum += i *i;
   }
-  document.write("Tổng bình phương của "+n+ " là: "+sum)
+  document.write(`Tổng bình phương của ${n} là ${sum}`)
 }
 
 totalOfSquare(3)
@@ -99,7 +99,7 @@ function totalOddNumber(n) {
       sum +=i;
     }
   }
-  document.write("Tổng các số lẻ trong khoảng 1 đến "+n+ " là:" + sum)
+  document.write(`Tổng các số lẻ trong khoảng 1 đến ${n} là ${sum}`)
 }
 
 totalOddNumber(5)
