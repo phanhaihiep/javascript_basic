@@ -51,3 +51,32 @@ for (let i = 0; i < aarr.length; i++) {
 }
 console.log("tần suất: ", tansuat);
 console.log("số có tần suất nhiều nhất: ", item);
+
+
+const data = [
+    { name: "Tung", age: 27, isSchool: false },
+    { name: "Khoa", age: 20, isSchool: true },
+    { name: "Triet", age: 18, isSchool: false },
+    { name: "Hong", age: 15, isSchool: false },
+    { name: "Tring", age: 10, isSchool: false },];
+
+// Tìm tất cả những người có tuổi lớn hơn 18
+// Tìm tất cả những người còn đang đi học
+
+const peopleOver18 = data.filter((item) => {
+    return item.age >18
+})
+
+
+const peopleIsSchool = data.filter((item)=>{
+    return item.isSchool
+})
+console.log(peopleOver18);
+console.log(peopleIsSchool);
+
+const average = data.reduce((accumulator, item) => {
+    return accumulator = accumulator +item.age
+},0)
+
+console.log(average/data.length);
+

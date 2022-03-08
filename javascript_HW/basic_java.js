@@ -1,3 +1,5 @@
+'use strict';
+
 // 1.Viết chương trình in ra các số từ 1 đến n?
 function displayNumber(n) {
   for (let i = 1; i<=n; i++) {
@@ -126,6 +128,7 @@ document.write("</br>")
 // 12. Hãy remove tất cả khoảng trắng, space và ‘enter’ trong một chuỗi
 // VD: “	Hello world   ”, output: “Helloworld”
 function cleanData(str) {
+  let strNew = []
   for (let i = 0; i < str.length; i++){
     if (str[i]===" "){
      strNew= str.replace(" ","")
@@ -185,3 +188,5 @@ document.write("</br>")
 
 // 17.  Viết hàm số tính min, max của 3 số?
 // VD: min(2,4,7) => output: 7
+
+
